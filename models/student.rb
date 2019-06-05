@@ -35,6 +35,11 @@ class Student
     @id = student_data.first()['id'].to_i
   end
 
+  def find_house
+    sql = "SELECT * FROM houses where id = $1"
+    values = [@house]
+  end
+
   def self.all
     sql = "SELECT * FROM students"
     students = SqlRunner.run(sql)
