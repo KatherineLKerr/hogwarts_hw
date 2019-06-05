@@ -1,4 +1,10 @@
 DROP TABLE students;
+DROP TABLE houses;
+
+CREATE TABLE houses(
+  name VARCHAR(255),
+  id SERIAL4 PRIMARY KEY
+);
 
 CREATE TABLE students (
   id SERIAL4 PRIMARY KEY,
@@ -8,4 +14,5 @@ CREATE TABLE students (
   age INT2
 );
 
+SELECT * FROM houses;
 SELECT * FROM students;
